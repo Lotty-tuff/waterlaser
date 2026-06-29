@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "waterlaser",
+  "version": "${version}",
+  "name": "Water Laser",
+  "description": "Shoots an infinite blue laser straight up out of every water block around you. Toggle on/off with a configurable key bind (Options > Controls).",
+  "authors": [
+    "You"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.waterlaser.WaterLaserClient"
+    ]
+  },
+  "mixins": [
+    "waterlaser.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
